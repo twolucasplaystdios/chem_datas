@@ -14,11 +14,13 @@ def get_token(sym: str):
     
     return tokens[sym]
 
+
+# 羥基
 HYDROXYL = {
-    "atoms": ["O", "H"],
+    "atoms": ["1", "O", "H"],
     "edges": [
         (0, 1, 1),
-        (0, 2, 1),
+        (1, 2, 1),
     ],
 }
 

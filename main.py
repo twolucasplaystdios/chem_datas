@@ -19,7 +19,10 @@ def get_token(sym: str):
 
 
 def atom2vec(symbol: str) -> np.ndarray:
-    a = tokens[symbol]
+    a = tokens[symbol] 
+    if symbol.isdigit:
+        raise ValueError("輸入為非原子")
+
 
     return np.array([
         a['en'] / 4,
