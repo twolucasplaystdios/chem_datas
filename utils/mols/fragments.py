@@ -72,10 +72,12 @@ class MolFragment:
         return MolFragment(new_atoms, new_edges)
     
 
-# 羥基
-HYDROXYL = MolFragment(["1", "O", "H"], [(0, 1, 1),(1, 2, 1)])
+if __name__ == "__main__":
+    # 羥基
+    HYDROXYL = MolFragment(["1", "O", "H"], [(0, 1, 1),(1, 2, 1)])
 
-# 甲基
-METHYL = MolFragment( ["C","H","H","H", "1"],  [(0, 1, 1), (0, 2, 1), (0, 3, 1), (0, 4, 1)])
+    # 甲基
+    METHYL = MolFragment( ["C","H","H","H", "1"],  [(0, 1, 1), (0, 2, 1), (0, 3, 1), (0, 4, 1)])
 
-print(MolFragment.merge2(METHYL, HYDROXYL))
+    print(MolFragment.merge2(METHYL, HYDROXYL))
+

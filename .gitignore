@@ -1,7 +1,10 @@
 # 排除虛擬環境資料夾
 .venv/
-.vscode/
 share/
+
+# 排除git、編輯器資料夾
+.vscode/
+.git/
 
 # 保持排除 Python 快取
 __pycache__/
